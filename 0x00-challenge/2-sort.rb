@@ -25,9 +25,7 @@ ARGV.each do |arg|
             break
         end
     end
-    if !is_inserted
-      result.insert(-1, i_arg)
-    end
+    result << i_arg if !is_inserted
 end
 
-puts result
+puts result.reverse()
